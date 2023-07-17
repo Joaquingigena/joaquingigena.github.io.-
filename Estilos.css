@@ -1,0 +1,238 @@
+/* Barra de navegacion */
+
+.navbar{
+    padding: 1rem;
+    background-color: #f5f6f7;
+    color: black;
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Elementos generales */
+section{
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-family: 'Rubik Dirt', cursive;
+}
+.seccion-oscura{
+    color: white;
+    background-color:#1b1b32;
+}
+.seccion-clara{
+    color: black;
+    background-color: white;
+}
+.texto-negro{
+    color:black;
+}
+.texto-blanco{
+    color: white;
+}
+
+.btn-info{
+    font-size: 1.1rem;
+    margin: 10px;
+    
+}
+
+/* Seccion principal */
+
+.principal{
+    background-color: #f5f6f7;
+    text-align: center;
+    min-height: 450px;
+
+}
+
+.hero-principal{
+    padding: 3rem;
+}
+
+.principal-image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.hero-principal h2{
+    font-size: 1.5rem;
+    color: darkgray;
+}
+
+
+/* Sobre mi  */
+.seccion-sobremi{
+    height: 500px;
+    padding: 50px;
+    
+}
+
+.seccion-sobremi .contenedor{
+    text-align: center;
+    max-width: 600px;
+}
+.seccion-titulo{
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Dirt', cursive;
+}
+
+
+
+/* Proyectos */
+.proyectos-recientes{
+    padding: 20px;
+    /* margin-bottom: 50px; */
+}
+
+.proyectos-recientes img{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    display: block;
+    border-radius: 10%;
+    transition: all 0.2s ease;
+}
+.proyectos-contenedor{
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+.overlay{
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.overlay p{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.overlay i{
+    font-size: 25px;
+    margin: 10px;
+    color: black;
+}
+.proyecto{
+    position: relative;
+}
+.proyecto:hover img{
+    opacity: 0.2;
+}
+.proyecto:hover .overlay{
+    opacity: 1;
+}
+/* .overlay .iconos-contenedor{
+    display: flex;
+} */
+.bagdes-contenedor{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.bagde{
+    margin: 10px;
+}
+
+
+/* Habilidades */
+
+.icon-habilidad{
+    display: block;
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+    
+}
+.seccion-habilidades{
+    min-height: 400px;
+    padding: 20px;
+    padding-bottom: 50px;
+}
+
+
+/* Footer */
+footer{
+    min-height: 300px;
+}
+
+.footer-texto{
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-family:'Quicksand' , sans-serif;
+}
+
+.contacto button{
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    margin: 10px;
+    border-radius: 100%;
+    transition: all 0.2s ease-in-out;  
+}
+.contacto button i{
+    color: white;
+    font-size: 1.25rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.iconos-redes a {
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: all 0.2s ease-in;
+
+}
+
+.iconos-redes i { 
+    color: white;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-in;
+}
+
+.iconos-redes a:hover {
+    background-color: white;
+    border: 2px solid rgb(5, 5, 97);
+}
+
+.iconos-redes a:hover i{
+    color: black;
+}
+.contacto button :hover{
+    color: black;
+}
+
+.contacto-button a:hover i{
+    color: black;
+}
+/* @Medias */
+
+@media screen and (max-width:767px) {
+    .navbar-brand{
+        display: none;
+    }
+}
+
