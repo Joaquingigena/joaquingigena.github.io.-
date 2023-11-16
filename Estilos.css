@@ -58,8 +58,8 @@ h1{
 }
 
 .principal-image{
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     margin: 20px;
 }
@@ -95,6 +95,7 @@ h1{
 }
 
 .proyectos-recientes img{
+    object-fit: cover; 
     height: 100%;
     width: 100%;
     padding: 10px;
@@ -117,9 +118,10 @@ h1{
 }
 
 .overlay p{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .overlay i{
@@ -129,6 +131,7 @@ h1{
 }
 .proyecto{
     position: relative;
+   
 }
 .proyecto:hover img{
     opacity: 0.2;
