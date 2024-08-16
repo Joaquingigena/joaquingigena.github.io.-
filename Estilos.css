@@ -27,22 +27,16 @@
 
 /* Elementos generales */
 section{
-    display: flex;
+    display: flex; 
      flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} 
 
 h1{
     font-size: 2.5rem;
     /* font-family: 'Rubik Dirt', cursive; */
     color: white;
-}
-
-.btn-info{
-    font-size: 1.1rem;
-    margin: 10px;
-    
 }
 
 /* Sección principal */
@@ -51,6 +45,7 @@ h1{
     text-align: center;
     min-height: 450px;
     height: 600px;
+    /* //margin-top: 50px; */
 }
 
 .hero-principal {
@@ -77,6 +72,21 @@ h1{
     color: #ffffffa2;    
 }
 
+/* Adaptable a dispositivos pequeños */
+@media (max-width: 800px) {
+    /* Ajustes para móviles */
+    .principal {
+        height: auto; /* Deja que la altura se ajuste automáticamente */
+        padding-bottom: 50px;
+    }
+     
+    .principal-image {
+        margin-top: 20px;
+        margin-left: 0;
+        width: 200px;
+        height: 200px;
+    }
+}
 
 /* Iconos */
 
