@@ -1,3 +1,5 @@
+
+body { overflow-x: hidden; }
 /* Barra de navegacion */
 
 .navbar{
@@ -18,11 +20,11 @@
 }
 
 .navbar .nav-link:hover {
-    color: #372068; /* Color al pasar el mouse por encima */
+    color: #5e3baa; /* Color al pasar el mouse por encima */
 }
 
 .navbar .nav-link.active {
-    color: #372068; /* Color del enlace activo */
+    color: #5e3baa; /* Color del enlace activo */
 }
 
 /* Elementos generales */
@@ -56,8 +58,8 @@ h1{
 }
 
 .principal-image {
-    width: 250px;
-    height: 250px;
+    max-width: 250px;
+    height: auto;
     margin-left: 30px;
     border-radius: 50%;
     object-fit: cover;
@@ -117,6 +119,27 @@ h1{
 }
 
 
+/* Adaptable a dispositivos pequeños */
+@media (max-width: 400px) {
+    .iconos-redes {
+        margin-top: 15px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; 
+    }
+
+    .iconRed {
+        width: 40px; 
+        height: 40px;
+        margin: 5px; 
+        padding: 5px;
+    }
+
+    .iconos-redes i { 
+        font-size: 1.2rem; 
+    }
+}
+
 .iconos-redes a:hover {
     background-color: #6548a0;
     /* border: 2px solid rgb(5, 5, 97); */
@@ -158,7 +181,7 @@ h1{
 
 .proyectos-contenedor {
     padding-top: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .overlay {
@@ -212,7 +235,7 @@ h1{
 
 .btn{
     font-size: 20px;
-    margin: 20px;
+    /* margin: 10px;  */
 }
 
 .boton :hover {
@@ -286,6 +309,7 @@ h1{
     background-color: #372068;
     border-color: #372068;
     transition: background-color 0.2s ease, border-color 0.2s ease;
+    font-size: 20px;
   }
   
   .seccion-contacto .btn-primary:hover {
@@ -339,23 +363,6 @@ footer{
 }
 
 
-
-/* Botón de CV */
-/* .btn-bd-primary {
-    background-color: #372068;
-    border-color: #372068;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 25px;
-    transition: all 0.2s ease-in;
-}
-
-.btn-bd-primary:hover {
-    background-color: #372068;
-    border-color: #372068;
-    color: white;
-} */
-/* @Medias */
 
 @media screen and (max-width:767px) {
     .navbar-brand{
